@@ -1,0 +1,68 @@
+button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: -webkit-gradient(linear, left top, right top, from(#0f0c29), color-stop(#302b63), to(#24243e));
+    background: linear-gradient(to right, #4e5455, #85826a, #704562);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 1px;
+   }
+   
+   button svg {
+    margin-right: 3px;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1), -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+   }
+   
+   button span {
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1), -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+   }
+   
+   button:hover svg {
+    -webkit-transform: translateX(5px) rotate(90deg);
+        -ms-transform: translateX(5px) rotate(90deg);
+            transform: translateX(5px) rotate(90deg);
+   }
+   
+   button:hover span {
+    -webkit-transform: translateX(7px);
+        -ms-transform: translateX(7px);
+            transform: translateX(7px);
+   }
+   .a{
+       text-decoration: none;
+   }
+
+   .bg-sohan{
+       background-color: rgba(111, 235, 228, 0.836);
+       border-radius: 10px;
+       margin: 30px;
+   }
+   .emoji-cplor{
+       color: #ffb700;
+       background-color: #0f0c29;
+       /* border-radius: 1px; */
+   }
+   .img-fluid1 {
+    max-width: auto;
+    height: auto;
+    margin-left: 8px;
+}

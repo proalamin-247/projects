@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>more event</h2>
+    <section>
+      <h3 id="src-info">Very very important secrate information</h3>
+      <input id="dlt-confirm" type="text" placeholder="Please Type Delete" />
+      <button id="dlt-btn" disabled>Delete</button>
+    </section>
+
+    <script>
+      document.getElementById("dlt-btn").addEventListener("click", function () {
+        document.getElementById("src-info").style.display = "none";
+      });
+
+      // focus
+      document
+        .getElementById("dlt-confirm")
+        .addEventListener("focus", function () {
+          document.body.style.backgroundColor = "red";
+        });
+      // blur
+      document
+        .getElementById("dlt-confirm")
+        .addEventListener("blur", function () {
+          document.body.style.backgroundColor = "white";
+        });
+      // key down
+      /* document.getElementById('dlt-confirm').addEventListener('keydown', function(){
+                const dltFiled = document.getElementById('dlt-confirm');
+                console.log(dltFiled.value);
+            }); */
+      // key press
+      /* document.getElementById('dlt-confirm').addEventListener('keypress', function(){
+                const dltFiled = document.getElementById('dlt-confirm');
+                console.log(dltFiled.value);
+            }); */
+
+      // key up
+      document
+        .getElementById("dlt-confirm")
+        .addEventListener("keyup", function () {
+          /* const dltFiled = document.getElementById('dlt-confirm');
+                console.log(dltFiled.value); */
+
+          const dltBtn = document.getElementById("dlt-btn");
+          if (event.target.value == "delete") {
+            dltBtn.removeAttribute("disabled");
+          } else {
+            dltBtn.setAttribute("disabled", true);
+          }
+        });
+      // change
+      document
+        .getElementById("dlt-confirm")
+        .addEventListener("change", function () {
+          const dltFiled = document.getElementById("dlt-confirm");
+          console.log(dltFiled.value);
+        });
+
+      //    const dlt-btn.value = '';
+    </script>
+  </body>
+</html>

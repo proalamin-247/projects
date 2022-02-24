@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add your comment, Please!!</h2>
+
+    <section>
+        <h4>Your Comment</h4>
+        <div id="all-comment-area">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat excepturi et totam eum laborum quidem eius delectus veniam, sequi, corrupti odit fugit quod vitae? Molestias obcaecati cumque exercitationem a. Ipsa.</p>
+            <p>Recusandae nam blanditiis molestias magnam beatae? Itaque accusantium quaerat, quas molestiae esse cumque placeat perspiciatis voluptate doloremque, sint minima expedita illum nostrum officiis aliquid dolor unde laboriosam, doloribus porro explicabo.</p>
+        </div>
+        <div>
+            <!-- <p>add your comment Please!</p> -->
+            <textarea name="" id="new-comment" cols="60" rows="6"></textarea>
+            <br>
+            <button id="post-button">Post</button>
+        </div>
+    </section>
+
+    <script>
+
+        // 1. add button event handler
+        document.getElementById('post-button').addEventListener('click', function(){
+
+            // 2. get user comment
+            const commentArea = document.getElementById('new-comment');
+            console.log(commentArea.value);
+
+            // 3.
+            const pText = document.createElement('p');
+            pText.innerText = commentArea.value;
+        })
+    </script>
+</body>
+</html>
